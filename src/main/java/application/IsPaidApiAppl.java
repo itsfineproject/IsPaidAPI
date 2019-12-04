@@ -1,12 +1,11 @@
-package m2m;
+package main.java.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarDataCheckAppl {
+public class IsPaidApiAppl {
     public static void main(String[] args) {
-
-        SpringApplication.run(CarDataCheckAppl.class, args);
+        SpringApplication.run(IsPaidApiAppl.class, args);
     }
 }
