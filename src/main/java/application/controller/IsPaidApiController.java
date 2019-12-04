@@ -16,4 +16,8 @@ public class IsPaidApiController {
     public boolean isPaid(@RequestParam String car_number){
         return gen.nextDouble()<probabitity;
     }
+
+    public double getProbabitity() {
+        return probabitity;
+    }
 }
