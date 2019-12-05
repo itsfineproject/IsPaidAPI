@@ -1,9 +1,7 @@
-package test.java;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import main.java.itsfine.com.ispaidapi.controller.*;
+import itsfine.com.ispaidapi.controller.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
