@@ -9,12 +9,12 @@ import java.util.Random;
 @RestController
 public class IsPaidApiController {
 
-    Random gen = new Random();
+    private Random gen = new Random();
     private double probability = 0.8;
 
     @GetMapping("/checkpaid")
-    public boolean isPaid(@RequestParam String car_number){
-        return gen.nextDouble()<probability;
+    public boolean isPaid(@RequestParam String car_number) {
+        return gen.nextDouble() < probability;
     }
 
     public double getProbability() {
