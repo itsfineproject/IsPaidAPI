@@ -11,13 +11,6 @@ public class JUnitTests {
 
     IsPaidApiController controller = new IsPaidApiController();
 
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
 
     String car_number = "123-456-789";
 
@@ -28,7 +21,7 @@ public class JUnitTests {
             results.add(controller.isPaid(car_number));
         };
         List<Boolean> trueAnswers = results.stream().filter(unit -> unit == true).collect(Collectors.toList());
-        double presetProbability = controller.getProbabitity()*1000;
+        double presetProbability = controller.getProbability()*1000;
         assertTrue((trueAnswers.size() <= (presetProbability+50)) && (trueAnswers.size() > presetProbability-50));
     }
 
